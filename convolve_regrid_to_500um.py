@@ -365,7 +365,6 @@ processes.
 data_1mm = fits.getdata('ngc891_nika2_1mm.fits')
 print(data_1mm)
 
-
 data_2mm = fits.getdata('ngc891_nika2_2mm.fits')
 print(data_2mm)
 
@@ -594,10 +593,10 @@ fits.writeto('ngc891_spire_350_corrected.fits', data_70_corrected, header_70)
 #Regrid:
 regridded_350 = mProject('ngc891_spire_350_corrected.fits', '350_regridded.fits', 'target350.txt.')
 
-
+"""
 
 #------------------------------------------------------------------------------
-"""REGRIDDED DATA"""
+REGRIDDED DATA
 #------------------------------------------------------------------------------
 
 data_1mm_regridded = fits.getdata('1mm_regridded.fits')
@@ -619,7 +618,7 @@ data_250_regridded_to_350 = fits.getdata('250_regridded_to_350.fits')
 
 
 #------------------------------------------------------------------------------
-"""GET THE RATIO IMAGES"""
+GET THE RATIO IMAGES
 #------------------------------------------------------------------------------
 
 
@@ -638,4 +637,4 @@ fits.writeto('100_by_350.fits', divided_data_100_over_350, header_350)
 fits.writeto('160_by_350.fits', divided_data_160_over_350, header_350)
 fits.writeto('250_by_350.fits', divided_data_250_over_350, header_350)
 
-
+"""
