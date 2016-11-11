@@ -1,0 +1,29 @@
+These SCUBA images are not the originals from Alton et al. (1998).
+They were re-reduced by me in 2001 from archival data. I used
+the latest (by then) knowledge on calibration and opacity corrections. 
+The new 850um image was used in Haas, Klaas & Bianchi (2002), 
+Whaley et al. (2009) and Hughes et al. (2014).
+
+The basic info is:
+-s for short (450um) and l for long (850um)
+-images in Jy/beam
+-15% overall uncertainty (Alton et al. 1998)
+-fwhm (9.6" and 15.7", at 450 and 860um, Alton et al. 1998)
+-sidelobes pickup (very uncertain at 450um...)
+ 60 and 20% (from Bianchi et al. 1998, same observing configuration)
+ So that the beam area is 1.133*fwhm*(1+sidelobes)
+
+If I use this info and estimate the background from the (small)
+free areas around the galaxy, I obtain total fluxes of
+4.9 ± 0.7 Jy at 850um (more or less in agreement with Alton et al.
+and with the earlier, less deep data of Israel et al. 1999) and
+50+/-8 Jy at 450um (which is higher than Alton - however his are
+not total fluxes - and Israel, but are within the errors of the
+latter). 
+
+The uncertainty on the 450um calibration is probably much higher
+then quoted above. Digging in my old notes I saw that for those
+observation nights (Oct 1997!) I obtained a mean calibration 
+factor of 1420 Jy/beam/Volts (with a scatter, thus an error on 
+calibration, of 35%!). Hughes et al. (2014) found inconsistency
+between the 450um flux and their SED, so they didn't use the map.
